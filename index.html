@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!--- NAV --->
+
+  <nav class="navbarTest navbar bg-dark">
+    <div class="container d-flex flex-row">
+      <div class="col-4">
+        <a class="navbar-brand" href="#">
+          <i class="fab fa-sticker-mule"></i>
+        </a>
+      </div>
+
+      <div class="col-8">
+        <button type="button text-center" class="btn btn-secondary btn-sm" href="https://www.google.com/">
+          <p><a class="text-white btnback" href="https://www.google.com/" target="_blank">Torna al menù Principale
+            </a></p>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HEADER -->
+
+  <div class="jumbotron mt-4 mx-4 ">
+
+    <div class="text-center">
+      <img class="img-fluid rounded" src="https://picsum.photos/1200/500/?random" alt="">
+    </div>
+
+    <hr class="my-4">
+
+    <div class="text-center">
+
+    <p>
+      Silvia, rimembri ancora <br />
+      Quel tempo della tua vita mortale,<br />
+      Quando beltà splendea<br />
+      Negli occhi tuoi ridenti e fuggitivi,<br />
+      E tu, lieta e pensosa, il limitare<br />
+      Di gioventù salivi?<br />
+      <br />
+      <span id="puntini">...</span>
+      <span id="altro">
+        Sonavan le quiete<br />
+        Stanze, e le vie dintorno,<br />
+        Al tuo perpetuo canto,<br />
+        Allor che all'opre femminili intenta<br />
+        Sedevi, assai contenta<br />
+        Di quel vago avvenir che in mente avevi.<br />
+        Era il maggio odoroso: e tu solevi<br />
+        Così menare il giorno.<br />
+        <br />
+        Io gli studi leggiadri<br />
+        Talor lasciando e le sudate carte,<br />
+        Ove il tempo mio primo<br />
+        E di me si spendea la miglior parte,<br />
+        D'in su i veroni del paterno ostello<br />
+        Porgea gli orecchi al suon della tua voce,<br />
+        Ed alla man veloce<br />
+        Che percorrea la faticosa tela.<br />
+        Mirava il ciel sereno,<br />
+        Le vie dorate e gli orti,<br />
+        E quinci il mar da lungi, e quindi il monte.<br />
+        Lingua mortal non dice<br />
+        Quel ch'io sentiva in seno.<br />
+        <br />
+        Che pensieri soavi,<br />
+        Che speranze, che cori, o Silvia mia!<br />
+        Quale allor ci apparia<br />
+        La vita umana e il fato!<br />
+        Quando sovviemmi di cotanta speme,<br />
+        Un affetto mi preme<br />
+        Acerbo e sconsolato,<br />
+        E tornami a doler di mia sventura.<br />
+        O natura, o natura,<br />
+        Perchè non rendi poi<br />
+        Quel che prometti allor? perchè di tanto<br />
+        Inganni i figli tuoi?<br />
+        <br />
+        Tu pria che l'erbe inaridisse il verno,<br />
+        Da chiuso morbo combattuta e vinta,<br />
+        Perivi, o tenerella. E non vedevi<br />
+        Il fior degli anni tuoi;<br />
+        Non ti molceva il core<br />
+        La dolce lode or delle negre chiome,<br />
+        Or degli sguardi innamorati e schivi;<br />
+        Nè teco le compagne ai dì festivi<br />
+        Ragionavan d'amore<br />
+        <br />
+        Anche peria fra poco<br />
+        La speranza mia dolce: agli anni miei<br />
+        Anche negaro i fati<br />
+        La giovanezza. Ahi come,<br />
+        Come passata sei,<br />
+        Cara compagna dell'età mia nova,<br />
+        Mia lacrimata speme!<br />
+        Questo è quel mondo? questi<br />
+        I diletti, l'amor, l'opre, gli eventi<br />
+        Onde cotanto ragionammo insieme?<br />
+        Questa la sorte dell'umane genti?<br />
+        All'apparir del vero<br />
+        Tu, misera, cadesti: e con la mano<br />
+        La fredda morte ed una tomba ignuda<br />
+        Mostravi di lontano.<br />
+      </span>
+    </p>
+
+    <button onclick="readMore()" class="btn btn-warning btn-fluid" id="bottone">Read more</button>
+
+  </div>
+
+  </div>
+
+  <div class="containerHeader  my-1 mx-1">
+
+    <div class="d-flex justify-content-around" id="fetchFalse">
+
+    </div>
+
+    <!--FOOTER-->
+
+
+    <footer class="d-flex flex-row bg-dark m-3">
+
+      <div class="col-8 p-2 flex-row text-center">
+        <p class="text-white" id="ora"></p>
+      </div>
+
+      <div class="col-4 p-2">
+        <p class="text-white text-right">Riccardo Vancini</p>
+      </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
